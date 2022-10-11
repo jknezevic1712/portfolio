@@ -174,7 +174,7 @@ export default function Home() {
         </section>
 
         <section>
-          <div className="my-20">
+          <div className="py-20">
             <h3 className="text-3xl mb-5 text-center dark:text-gray-100 md:text-left 3xl:text-4xl">
               Portfolio
             </h3>
