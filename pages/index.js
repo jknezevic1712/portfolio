@@ -122,7 +122,7 @@ export default function Home() {
           </div>
 
           <div className="gap-10 lg:flex lg:flex-wrap lg:justify-center lg:gap-5 xl:flex-nowrap xl:gap-10">
-            <div className="my-10 flex flex-1 basis-1/3 flex-col items-center justify-start rounded-xl p-10 text-center shadow-lg dark:bg-gray-50">
+            <div className="my-10 flex flex-1 basis-1/3 flex-col items-center justify-start rounded-xl p-10 text-center shadow-lg dark:bg-gray-200">
               <Image src={code} alt="" width={100} height={100} />
               <h3 className="pb-2 pt-8 text-lg font-medium 2xl:text-2xl">
                 Modern websites and software
@@ -149,7 +149,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="my-10 flex flex-1 basis-1/3 flex-col items-center justify-start rounded-xl p-10 text-center shadow-lg dark:bg-gray-50">
+            <div className="my-10 flex flex-1 basis-1/3 flex-col items-center justify-start rounded-xl p-10 text-center shadow-lg dark:bg-gray-200">
               <Image src={design} alt="" width={100} height={100} />
               <h3 className="pb-2 pt-8 text-lg font-medium 2xl:text-2xl">
                 Refurbishing old designs and software
@@ -160,7 +160,7 @@ export default function Home() {
                 looking modern and beautiful once more.
               </p>
             </div>
-            <div className="my-10 flex flex-1 basis-1/3 flex-col items-center justify-start rounded-xl p-10 text-center shadow-lg dark:bg-gray-50">
+            <div className="my-10 flex flex-1 basis-1/3 flex-col items-center justify-start rounded-xl p-10 text-center shadow-lg dark:bg-gray-200">
               <Image src={consulting} alt="" width={100} height={100} />
               <h3 className="pb-2 pt-8 text-lg font-medium 2xl:text-2xl">
                 Collaborations
@@ -214,7 +214,7 @@ export default function Home() {
               Personal projects
             </h3>
             <div className="gap-10 lg:flex lg:flex-wrap lg:justify-center lg:gap-5 xl:flex-nowrap xl:gap-10">
-              <div className="my-10 flex flex-1 basis-1/3 flex-col items-center justify-start rounded-xl p-10 text-center shadow-lg dark:bg-gray-50">
+              <div className="my-10 flex flex-1 basis-1/3 flex-col items-center justify-start rounded-xl p-10 text-center shadow-lg dark:bg-gray-200">
                 <Image src={plahutica} alt="" width={100} height={100} />
                 <a
                   href="https://plahutica.vercel.app/"
@@ -229,7 +229,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="my-10 flex flex-1 basis-1/3 flex-col items-center justify-start rounded-xl p-10 text-center shadow-lg dark:bg-gray-50">
+              <div className="my-10 flex flex-1 basis-1/3 flex-col items-center justify-start rounded-xl p-10 text-center shadow-lg dark:bg-gray-200">
                 <Image src={recipe_o_mat} alt="" width={100} height={100} />
                 <a
                   href="https://recipe-o-mat.web.app/"
@@ -243,7 +243,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="my-10 flex flex-1 basis-1/3 flex-col items-center justify-start rounded-xl p-10 text-center shadow-lg dark:bg-gray-50">
+              <div className="my-10 flex flex-1 basis-1/3 flex-col items-center justify-start rounded-xl p-10 text-center shadow-lg dark:bg-gray-200">
                 <Image src={crwn_clothing} alt="" width={100} height={100} />
                 <a
                   href="https://crwn-clothing-jk.vercel.app/"
