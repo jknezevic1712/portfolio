@@ -189,12 +189,8 @@ export default function Home() {
               Informatics in Varaždin, where I obtained degree of{" "}
               <span className="bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent">
                 Bachelors in Informatics
-              </span>{" "}
-              and I am currently pursuing{" "}
-              <span className="bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent">
-                Master of Informatics
-              </span>{" "}
-              degree.
+              </span>
+              .
             </p>
             <p className="py-2 text-center text-base leading-8 text-gray-800 dark:text-gray-300 md:text-left md:text-lg 3xl:text-xl">
               Personality wise, I am interested in programming and music. I also
