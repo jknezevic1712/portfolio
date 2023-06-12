@@ -44,7 +44,7 @@ export default function Home() {
               <li>
                 <a
                   className="ml-8 rounded-md bg-gradient-to-r from-cyan-500 to-teal-500 px-4 py-2 text-white lg:hover:bg-gradient-to-r lg:hover:from-cyan-600 lg:hover:to-teal-600 lg:hover:transition-all 3xl:text-lg"
-                  href="https://europa.eu/europass/eportfolio/screen/share/ce587334-2833-47ab-b396-048b673417ae?lang=en"
+                  href="https://europa.eu/europass/eportfolio/screen/share/f6f916c9-65b5-48cc-82aa-5263f1f63fbe?lang=en"
                   target="_blank"
                   rel="noreferrer"
                 >
