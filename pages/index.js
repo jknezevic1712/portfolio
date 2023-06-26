@@ -188,9 +188,9 @@ export default function Home() {
             .
           </p>
           <p className="py-2 text-center text-base leading-8 text-gray-800 dark:text-gray-300 md:text-left md:text-lg 3xl:text-xl">
-            Personality wise, I am interested in programming and music. I also
-            believe in team work and communication as they are, in my opinion,
-            crucial to achieving{" "}
+            Personality wise, I am interested in programming, music and
+            travelling. I also believe in team work and communication as they
+            are, in my opinion, crucial to achieving{" "}
             <span className="bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent">
               success
             </span>{" "}
