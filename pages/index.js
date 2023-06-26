@@ -175,8 +175,8 @@ export default function Home() {
             About me
           </h3>
           <p className="py-2 text-center text-base leading-8 text-gray-800 dark:text-gray-300 md:text-left md:text-lg 3xl:text-xl">
-            Born in 1998 in Pakrac, Croatia. Graduated at Tehnička škola Daruvar
-            becoming a{" "}
+            Born in 1998 in Pakrac, Croatia. Graduated at Technical school in
+            Daruvar becoming a{" "}
             <span className="bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent">
               computer technician
             </span>
