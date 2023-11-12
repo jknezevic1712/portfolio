@@ -6,8 +6,6 @@ const LinkClassTypes = {
 };
 
 export default function Anchor({ children, href, type = 'DEFAULT' }) {
-  console.log('type ', type);
-  console.log('LinkClassTypes[type] ', LinkClassTypes[type]);
   return (
     <a
       href={href}
