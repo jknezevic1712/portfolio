@@ -15,7 +15,7 @@ export default function PersonalProjects() {
       <h3 className="mb-5 text-center text-3xl dark:text-gray-100 md:text-left 3xl:text-4xl">
         Personal projects
       </h3>
-      <div className="gap-10 lg:flex lg:flex-wrap lg:justify-center lg:gap-5 xl:flex-nowrap xl:gap-10">
+      <div className="gap-10 lg:flex lg:flex-wrap lg:justify-center lg:gap-5 xl:gap-10">
         <Card>
           <Img src={plahutica} />
           <Anchor
