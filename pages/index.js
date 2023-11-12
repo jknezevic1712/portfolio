@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import Head from 'next/head';
 
-import Header from '../components/templates/Header1';
-import Hero from '../components/templates/Hero1';
-import WorkExperience from '../components/templates/WorkExperience1';
-import AboutMe from '../components/templates/AboutMe1';
-import PersonalProjects from '../components/templates/PersonalProjects1';
+import Header from '../components/templates/Header';
+import Hero from '../components/templates/Hero';
+import WorkExperience from '../components/templates/WorkExperience';
+import AboutMe from '../components/templates/AboutMe';
+import PersonalProjects from '../components/templates/PersonalProjects';
 
 // Barlow font for headings
 // Roboto Slab, Roboto or Open Sans font for body
