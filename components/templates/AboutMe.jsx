@@ -1,10 +1,12 @@
+import Paragraph from '../atoms/Paragraph';
+
 export default function AboutMe() {
   return (
     <section className="my-5 w-full max-w-7xl">
       <h3 className="mb-5 text-center text-3xl dark:text-gray-100 md:text-left 3xl:text-4xl">
         About me
       </h3>
-      <p className="py-2 text-center text-base leading-8 text-gray-800 dark:text-gray-300 md:text-left md:text-lg 3xl:text-xl">
+      <Paragraph type="CONTENT">
         Born in 1998 in Pakrac, Croatia. Graduated at Technical school in
         Daruvar becoming a{' '}
         <span className="bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent">
@@ -16,8 +18,9 @@ export default function AboutMe() {
           Bachelors in Informatics
         </span>
         .
-      </p>
-      <p className="py-2 text-center text-base leading-8 text-gray-800 dark:text-gray-300 md:text-left md:text-lg 3xl:text-xl">
+      </Paragraph>
+
+      <Paragraph type="CONTENT">
         Personality wise, I am interested in programming, music and travelling.
         I also believe in team work and communication as they are, in my
         opinion, crucial to achieving{' '}
@@ -32,8 +35,9 @@ export default function AboutMe() {
         kinds of different features to stay up to date with the latest additions
         to the popular libraries and packages I use while learning new things
         and gaining more experience as well.
-      </p>
-      <p className="py-2 text-center text-base leading-8 text-gray-800 dark:text-gray-300 md:text-left md:text-lg 3xl:text-xl">
+      </Paragraph>
+
+      <Paragraph type="CONTENT">
         Additionally, I strive to become part of a team that pushes each other
         every day to{' '}
         <span className="bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent">
@@ -48,7 +52,7 @@ export default function AboutMe() {
           working together to solve them
         </span>{' '}
         so that everyone can hopefully learn something along the way!
-      </p>
+      </Paragraph>
     </section>
   );
 }

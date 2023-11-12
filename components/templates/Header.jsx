@@ -1,5 +1,7 @@
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 
+import Anchor from '../atoms/Anchor';
+
 export default function Header({ setDarkMode }) {
   return (
     <section className="mb-20 w-full md:mb-0">
@@ -15,14 +17,14 @@ export default function Header({ setDarkMode }) {
             />
           </li>
           <li>
-            <a
-              className="ml-8 rounded-md bg-gradient-to-r from-cyan-500 to-teal-500 px-4 py-2 text-white lg:hover:bg-gradient-to-r lg:hover:from-cyan-600 lg:hover:to-teal-600 lg:hover:transition-all 3xl:text-lg"
-              href="https://europa.eu/europass/eportfolio/screen/share/a284191a-e6ed-43c4-9c50-90a0fb831366?lang=en"
-              target="_blank"
-              rel="noreferrer"
+            <Anchor
+              href={
+                'https://europa.eu/europass/eportfolio/screen/share/a284191a-e6ed-43c4-9c50-90a0fb831366?lang=en'
+              }
+              type="CV"
             >
               Resume
-            </a>
+            </Anchor>
           </li>
         </ul>
       </nav>

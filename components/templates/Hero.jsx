@@ -1,7 +1,10 @@
-import Image from 'next/image';
 import { AiFillGithub, AiFillLinkedin, AiFillMail } from 'react-icons/ai';
 
 import avatar from '../../public/avatar.jpeg';
+
+import Paragraph from '../atoms/Paragraph';
+import Img from '../atoms/Img';
+import Anchor from '../atoms/Anchor';
 
 export default function Hero() {
   return (
@@ -13,40 +16,26 @@ export default function Hero() {
         <h3 className="py-2 text-2xl dark:text-gray-100 md:text-2xl 2xl:text-3xl">
           Frontend developer
         </h3>
-        <p className="mx-auto max-w-lg py-5 text-base leading-8 text-gray-800 dark:text-gray-300 md:text-lg 2xl:text-xl">
+        <Paragraph type="LARGE">
           I love coding and creating new solutions as I get better at it day by
           day!
-        </p>
+        </Paragraph>
       </div>
       <div className="flex justify-center gap-5 text-5xl text-gray-600 dark:text-gray-300 2xl:my-10 2xl:text-6xl 3xl:my-14">
-        <a
-          href="https://github.com/jknezevic1712/"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <Anchor href={'https://github.com/jknezevic1712/'}>
           <AiFillGithub />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/jknezevic1712/"
-          target="_blank"
-          rel="noreferrer"
-        >
+        </Anchor>
+        <Anchor href={'https://www.linkedin.com/in/jknezevic1712/'}>
           <AiFillLinkedin />
-        </a>
-        <a
-          href="mailto:knezevic.jakov@gmail.com"
-          target="_blank"
-          rel="noreferrer"
-        >
+        </Anchor>
+        <Anchor href={'mailto:knezevic.jakov@gmail.com'}>
           <AiFillMail />
-        </a>
+        </Anchor>
       </div>
       <div className="relative mx-auto mt-32 h-52 w-52 overflow-hidden rounded-full shadow-2xl filter md:mb-0 md:mt-16 md:h-80 md:w-80 2xl:mt-28">
-        <Image
+        <Img
           src={avatar}
-          alt=""
-          layout="fill"
-          objectFit="cover"
+          type="HERO"
         />
       </div>
     </section>
