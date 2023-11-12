@@ -1,18 +1,18 @@
-import { useState } from "react";
-import Head from "next/head";
-import Image from "next/image";
+import { useState } from 'react';
+import Head from 'next/head';
+import Image from 'next/image';
 
-import { BsFillMoonStarsFill } from "react-icons/bs";
-import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai";
+import { BsFillMoonStarsFill } from 'react-icons/bs';
+import { AiFillGithub, AiFillLinkedin, AiFillMail } from 'react-icons/ai';
 
-import avatar from "../public/avatar.jpeg";
-import design from "../public/design.png";
-import code from "../public/code.png";
-import consulting from "../public/consulting.png";
+import avatar from '../public/avatar.jpeg';
+import design from '../public/design.png';
+import code from '../public/code.png';
+import consulting from '../public/consulting.png';
 
-import plahutica from "../public/plahutica.png";
-import crwn_clothing from "../public/crwn-clothing.svg";
-import recipe_o_mat from "../public/recipe-o-mat.png";
+import plahutica from '../public/plahutica.png';
+import crwn_clothing from '../public/crwn-clothing.svg';
+import recipe_o_mat from '../public/recipe-o-mat.png';
 
 // Barlow font for headings
 // Roboto Slab, Roboto or Open Sans font for body
@@ -21,11 +21,17 @@ export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div className={darkMode ? 'dark' : ''}>
       <Head>
         <title>Jakov Knezevic Portfolio</title>
-        <meta name="description" content="Jakov Knezevic Portfolio" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="Jakov Knezevic Portfolio"
+        />
+        <link
+          rel="icon"
+          href="/favicon.ico"
+        />
       </Head>
 
       <main className="flex flex-col items-center bg-gray-50 px-10 dark:bg-gray-800 md:px-20 lg:px-20">
@@ -44,7 +50,7 @@ export default function Home() {
               <li>
                 <a
                   className="ml-8 rounded-md bg-gradient-to-r from-cyan-500 to-teal-500 px-4 py-2 text-white lg:hover:bg-gradient-to-r lg:hover:from-cyan-600 lg:hover:to-teal-600 lg:hover:transition-all 3xl:text-lg"
-                  href="https://europa.eu/europass/eportfolio/screen/share/04f60975-6f24-4e46-9dde-b763b3a706a8?lang=en"
+                  href="https://europa.eu/europass/eportfolio/screen/share/a284191a-e6ed-43c4-9c50-90a0fb831366?lang=en"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -91,7 +97,12 @@ export default function Home() {
             </a>
           </div>
           <div className="relative mx-auto mt-32 h-52 w-52 overflow-hidden rounded-full shadow-2xl filter md:mb-0 md:mt-16 md:h-80 md:w-80 2xl:mt-28">
-            <Image src={avatar} alt="" layout="fill" objectFit="cover" />
+            <Image
+              src={avatar}
+              alt=""
+              layout="fill"
+              objectFit="cover"
+            />
           </div>
         </section>
 
@@ -102,14 +113,14 @@ export default function Home() {
             </h3>
             <p className="py-2 text-center text-base leading-8 text-gray-800 dark:text-gray-300 md:text-left md:text-lg 3xl:text-xl">
               Since the beginning of my journey as a frontend web and software
-              developer, I&apos;ve done remote and on site work for{" "}
+              developer, I&apos;ve done remote and on site work for{' '}
               <span className="bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent lg:hover:bg-gradient-to-r lg:hover:from-cyan-600 lg:hover:to-teal-600 lg:hover:transition-all">
                 <a href="https://www.libelle.com/">Ovis software</a>
-              </span>{" "}
-              and{" "}
+              </span>{' '}
+              and{' '}
               <span className="bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent lg:hover:bg-gradient-to-r lg:hover:from-cyan-600 lg:hover:to-teal-600 lg:hover:transition-all">
                 <a href="https://www.ovis-software.com/">Libelle IT Group</a>
-              </span>{" "}
+              </span>{' '}
               while also working on personal development and side projects that
               continuously keep advancing me to the next levels.
             </p>
@@ -117,7 +128,12 @@ export default function Home() {
 
           <div className="gap-10 lg:flex lg:flex-wrap lg:justify-center lg:gap-5 xl:flex-nowrap xl:gap-10">
             <div className="my-10 flex flex-1 basis-1/3 flex-col items-center justify-start rounded-xl p-10 text-center shadow-lg dark:bg-gray-200">
-              <Image src={code} alt="" width={100} height={100} />
+              <Image
+                src={code}
+                alt=""
+                width={100}
+                height={100}
+              />
               <h3 className="pb-4 pt-8 text-lg font-medium 2xl:text-2xl">
                 Tools I love using
               </h3>
@@ -145,7 +161,12 @@ export default function Home() {
             </div>
 
             <div className="my-10 flex flex-1 basis-1/3 flex-col items-center justify-start rounded-xl p-10 text-center shadow-lg dark:bg-gray-200">
-              <Image src={design} alt="" width={100} height={100} />
+              <Image
+                src={design}
+                alt=""
+                width={100}
+                height={100}
+              />
               <h3 className="pb-4 pt-8 text-lg font-medium 2xl:text-2xl">
                 Planning and designing
               </h3>
@@ -157,7 +178,12 @@ export default function Home() {
             </div>
 
             <div className="my-10 flex flex-1 basis-1/3 flex-col items-center justify-start rounded-xl p-10 text-center shadow-lg dark:bg-gray-200">
-              <Image src={consulting} alt="" width={100} height={100} />
+              <Image
+                src={consulting}
+                alt=""
+                width={100}
+                height={100}
+              />
               <h3 className="pb-4 pt-8 text-lg font-medium 2xl:text-2xl">
                 Teamwork
               </h3>
@@ -176,12 +202,12 @@ export default function Home() {
           </h3>
           <p className="py-2 text-center text-base leading-8 text-gray-800 dark:text-gray-300 md:text-left md:text-lg 3xl:text-xl">
             Born in 1998 in Pakrac, Croatia. Graduated at Technical school in
-            Daruvar becoming a{" "}
+            Daruvar becoming a{' '}
             <span className="bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent">
               computer technician
             </span>
             . After that, I enrolled at the Faculty of Organization and
-            Informatics in Varaždin, where I obtained degree of{" "}
+            Informatics in Varaždin, where I obtained degree of{' '}
             <span className="bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent">
               Bachelors in Informatics
             </span>
@@ -190,11 +216,11 @@ export default function Home() {
           <p className="py-2 text-center text-base leading-8 text-gray-800 dark:text-gray-300 md:text-left md:text-lg 3xl:text-xl">
             Personality wise, I am interested in programming, music and
             travelling. I also believe in team work and communication as they
-            are, in my opinion, crucial to achieving{" "}
+            are, in my opinion, crucial to achieving{' '}
             <span className="bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent">
               success
-            </span>{" "}
-            and{" "}
+            </span>{' '}
+            and{' '}
             <span className="bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent">
               progress
             </span>
@@ -205,18 +231,18 @@ export default function Home() {
           </p>
           <p className="py-2 text-center text-base leading-8 text-gray-800 dark:text-gray-300 md:text-left md:text-lg 3xl:text-xl">
             Additionally, I strive to become part of a team that pushes each
-            other every day to{" "}
+            other every day to{' '}
             <span className="bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent">
               become better
-            </span>{" "}
-            by{" "}
+            </span>{' '}
+            by{' '}
             <span className="bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent">
               learning from our mistakes
-            </span>{" "}
-            and{" "}
+            </span>{' '}
+            and{' '}
             <span className="bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent">
               working together to solve them
-            </span>{" "}
+            </span>{' '}
             so that everyone can hopefully learn something along the way!
           </p>
         </section>
@@ -227,7 +253,12 @@ export default function Home() {
           </h3>
           <div className="gap-10 lg:flex lg:flex-wrap lg:justify-center lg:gap-5 xl:flex-nowrap xl:gap-10">
             <div className="my-10 flex flex-1 basis-1/3 flex-col items-center justify-start rounded-xl p-10 text-center shadow-lg dark:bg-gray-200">
-              <Image src={plahutica} alt="" width={100} height={100} />
+              <Image
+                src={plahutica}
+                alt=""
+                width={100}
+                height={100}
+              />
               <a
                 href="https://plahutica.vercel.app/"
                 target="_blank"
@@ -242,7 +273,12 @@ export default function Home() {
             </div>
 
             <div className="my-10 flex flex-1 basis-1/3 flex-col items-center justify-start rounded-xl p-10 text-center shadow-lg dark:bg-gray-200">
-              <Image src={recipe_o_mat} alt="" width={100} height={100} />
+              <Image
+                src={recipe_o_mat}
+                alt=""
+                width={100}
+                height={100}
+              />
               <a
                 href="https://recipe-o-mat.web.app/"
                 target="_blank"
@@ -256,7 +292,12 @@ export default function Home() {
             </div>
 
             <div className="my-10 flex flex-1 basis-1/3 flex-col items-center justify-start rounded-xl p-10 text-center shadow-lg dark:bg-gray-200">
-              <Image src={crwn_clothing} alt="" width={100} height={100} />
+              <Image
+                src={crwn_clothing}
+                alt=""
+                width={100}
+                height={100}
+              />
               <a
                 href="https://crwn-clothing-jk.vercel.app/"
                 target="_blank"
