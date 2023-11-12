@@ -1,0 +1,54 @@
+import Image from 'next/image';
+import { AiFillGithub, AiFillLinkedin, AiFillMail } from 'react-icons/ai';
+
+import avatar from '../../public/avatar.jpeg';
+
+export default function Hero() {
+  return (
+    <section className="my-5 w-full max-w-7xl">
+      <div className="text-center md:p-10">
+        <h2 className="bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text py-2 text-4xl font-medium text-transparent md:text-5xl 2xl:text-6xl 3xl:text-6xl">
+          Jakov Knezevic
+        </h2>
+        <h3 className="py-2 text-2xl dark:text-gray-100 md:text-2xl 2xl:text-3xl">
+          Frontend developer
+        </h3>
+        <p className="mx-auto max-w-lg py-5 text-base leading-8 text-gray-800 dark:text-gray-300 md:text-lg 2xl:text-xl">
+          I love coding and creating new solutions as I get better at it day by
+          day!
+        </p>
+      </div>
+      <div className="flex justify-center gap-5 text-5xl text-gray-600 dark:text-gray-300 2xl:my-10 2xl:text-6xl 3xl:my-14">
+        <a
+          href="https://github.com/jknezevic1712/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <AiFillGithub />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/jknezevic1712/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <AiFillLinkedin />
+        </a>
+        <a
+          href="mailto:knezevic.jakov@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <AiFillMail />
+        </a>
+      </div>
+      <div className="relative mx-auto mt-32 h-52 w-52 overflow-hidden rounded-full shadow-2xl filter md:mb-0 md:mt-16 md:h-80 md:w-80 2xl:mt-28">
+        <Image
+          src={avatar}
+          alt=""
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+    </section>
+  );
+}
