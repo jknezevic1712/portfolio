@@ -14,7 +14,7 @@ export default function Hero() {
           Jakov Knezevic
         </h2>
         <h3 className="py-2 text-2xl dark:text-gray-100 md:text-2xl 2xl:text-3xl">
-          Frontend developer
+          Software engineer
         </h3>
         <Paragraph type="LARGE">
           I love coding and creating new solutions as I get better at it day by

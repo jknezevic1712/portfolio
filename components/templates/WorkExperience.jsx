@@ -14,8 +14,8 @@ export default function WorkExperience() {
           Work experience
         </h3>
         <Paragraph type="CONTENT">
-          Since the beginning of my journey as a frontend web and software
-          developer, I&apos;ve done remote and on site work for{' '}
+          Since the beginning of my journey as a frontend developer and software
+          engineer, I&apos;ve done remote and on site work for{' '}
           <span className="bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent lg:hover:bg-gradient-to-r lg:hover:from-cyan-600 lg:hover:to-teal-600 lg:hover:transition-all">
             <a href="https://www.libelle.com/">Ovis software</a>
           </span>{' '}
