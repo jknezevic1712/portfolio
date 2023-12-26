@@ -4,7 +4,6 @@ import recipe_o_mat from '../../public/recipe-o-mat.png';
 import tmb from '../../public/tmb.png';
 import better_timer from '../../public/better_timer.png';
 
-import Anchor from '../atoms/Anchor';
 import Paragraph from '../atoms/Paragraph';
 import Img from '../atoms/Img';
 import Card from '../molecules/Card';
@@ -16,66 +15,41 @@ export default function PersonalProjects() {
         Personal projects
       </h3>
       <div className="gap-10 lg:flex lg:flex-wrap lg:justify-center lg:gap-5 xl:gap-10">
-        <Card>
+        <Card url="https://plahutica.vercel.app/">
           <Img src={plahutica} />
-          <Anchor
-            href={'https://plahutica.vercel.app/'}
-            type="PROJECT"
-          >
-            Plahutica
-          </Anchor>
+          <h2>Plahutica</h2>
           <Paragraph>
             Travelling on a budget guide here to help you out with useful ideas
             or advices for your journey.
           </Paragraph>
         </Card>
 
-        <Card>
+        <Card url="https://recipe-o-mat.web.app/">
           <Img src={recipe_o_mat} />
-          <Anchor
-            href={'https://recipe-o-mat.web.app/'}
-            type="PROJECT"
-          >
-            Recipe-O-Mat
-          </Anchor>
+          <h2>Recipe-O-Mat</h2>
           <Paragraph>
             Check out some amazing recipes or share yours with others!
           </Paragraph>
         </Card>
 
-        <Card>
+        <Card url="https://crwn-clothing-jk.vercel.app/">
           <Img src={crwn_clothing} />
-          <Anchor
-            href={'https://crwn-clothing-jk.vercel.app/'}
-            type="PROJECT"
-          >
-            Crown Clothing
-          </Anchor>
+          <h2>Crown Clothing</h2>
           <Paragraph>Web shop with various products.</Paragraph>
         </Card>
 
-        <Card>
+        <Card url="https://tmb-jk.vercel.app/">
           <Img src={tmb} />
-          <Anchor
-            href={'https://tmb-jk.vercel.app/'}
-            type="PROJECT"
-          >
-            Task Management Board
-          </Anchor>
+          <h2>Task Management Board</h2>
           <Paragraph>
             Application providing you with an overview of tasks you create and
             manipulate with.
           </Paragraph>
         </Card>
 
-        <Card>
+        <Card url="https://better-timer.vercel.app/">
           <Img src={better_timer} />
-          <Anchor
-            href={'https://better-timer.vercel.app/'}
-            type="PROJECT"
-          >
-            Better Timer
-          </Anchor>
+          <h2>Better Timer</h2>
           <Paragraph>
             Easily track time spent on your tasks using Better Timer!
           </Paragraph>
