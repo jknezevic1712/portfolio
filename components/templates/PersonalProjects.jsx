@@ -4,9 +4,10 @@ import recipe_o_mat from '../../public/recipe_o_mat-showcase.webp';
 import tmb from '../../public/tmb-showcase.webp';
 import better_timer from '../../public/better_timer-showcase.webp';
 
-import Paragraph from '../atoms/Paragraph';
+import WideCard from '../molecules/WideCard';
+import Header2 from '../atoms/Header2';
 import Img from '../atoms/Img';
-import Card from '../molecules/Card';
+import Paragraph from '../atoms/Paragraph';
 
 export default function PersonalProjects() {
 	return (
@@ -14,46 +15,78 @@ export default function PersonalProjects() {
 			<h3 className="mb-5 text-center text-3xl dark:text-gray-100 md:text-left 3xl:text-4xl">
 				Personal projects
 			</h3>
-			<div className="gap-10 lg:flex lg:flex-wrap lg:justify-center lg:gap-5 xl:gap-10">
-				<Card url="https://plahutica.vercel.app/">
-					<Img src={plahutica} />
-					<h2>Plahutica</h2>
+			{/* <div className="gap-10 lg:flex lg:flex-wrap lg:justify-center lg:gap-5 xl:gap-10"> */}
+			<div className="gap-10 lg:grid lg:grid-cols-1 lg:justify-center lg:gap-5 xl:gap-10">
+				<WideCard url="https://plahutica.vercel.app/">
+					<Header2>Plahutica</Header2>
+					<div className="img-inherit_dimensions border border-gray-950 rounded-sm lg:group-hover:scale-105 lg:transition-all lg:duration-500">
+						<Img
+							type="PROJECT"
+							src={plahutica}
+						/>
+					</div>
 					<Paragraph>
 						Travelling on a budget guide here to help you out with useful ideas
 						or advices for your journey.
 					</Paragraph>
-				</Card>
+				</WideCard>
 
-				<Card url="https://recipe-o-mat.web.app/">
-					<Img src={recipe_o_mat} />
-					<h2>Recipe-O-Mat</h2>
+				<WideCard url="https://recipe-o-mat.web.app/">
+					<Header2>Recipe-O-Mat</Header2>
+					<div className="img-inherit_dimensions border border-gray-950 rounded-sm lg:group-hover:scale-105 lg:transition-all lg:duration-500">
+						<Img
+							type="PROJECT"
+							src={recipe_o_mat}
+						/>
+					</div>
+
 					<Paragraph>
 						Check out some amazing recipes or share yours with others!
 					</Paragraph>
-				</Card>
+				</WideCard>
 
-				<Card url="https://crwn-clothing-jk.vercel.app/">
-					<Img src={crwn_clothing} />
-					<h2>Crown Clothing</h2>
+				<WideCard url="https://crwn-clothing-jk.vercel.app/">
+					<Header2>Crown Clothing</Header2>
+					<div className="img-inherit_dimensions border border-gray-950 rounded-sm lg:group-hover:scale-105 lg:transition-all lg:duration-500">
+						<Img
+							type="PROJECT"
+							src={crwn_clothing}
+						/>
+					</div>
+
 					<Paragraph>Web shop with various products.</Paragraph>
-				</Card>
+				</WideCard>
 
-				<Card url="https://tmb-jk.vercel.app/">
-					<Img src={tmb} />
-					<h2>Task Management Board</h2>
+				<WideCard url="https://tmb-jk.vercel.app/">
+					<Header2>Task Management Board</Header2>
+
+					<div className="img-inherit_dimensions border border-gray-950 rounded-sm lg:group-hover:scale-105 lg:transition-all lg:duration-500">
+						<Img
+							type="PROJECT"
+							src={tmb}
+						/>
+					</div>
+
 					<Paragraph>
 						Application providing you with an overview of tasks you create and
 						manipulate with.
 					</Paragraph>
-				</Card>
+				</WideCard>
 
-				<Card url="https://better-timer.vercel.app/">
-					<Img src={better_timer} />
-					<h2>Better Timer</h2>
+				<WideCard url="https://better-timer.vercel.app/">
+					<Header2>Better Timer</Header2>
+
+					<div className="img-inherit_dimensions border border-gray-950 rounded-sm lg:group-hover:scale-105 lg:transition-all lg:duration-500">
+						<Img
+							type="PROJECT"
+							src={better_timer}
+						/>
+					</div>
+
 					<Paragraph>
 						Easily track time spent on your tasks using Better Timer!
 					</Paragraph>
-				</Card>
+				</WideCard>
 			</div>
 		</section>
 	);
