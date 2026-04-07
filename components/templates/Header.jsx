@@ -19,7 +19,7 @@ export default function Header({ setDarkMode }) {
 					<li>
 						<Anchor
 							href={
-								'https://europa.eu/europass/eportfolio/screen/share/0ddbfb19-7efe-450f-828d-45577e217a12?lang=en'
+								'https://europa.eu/europass/eportfolio/screen/share/0f53aeea-94ba-4d84-8f77-7bb5ccc33c1e?lang=en'
 							}
 							type="CV"
 						>
