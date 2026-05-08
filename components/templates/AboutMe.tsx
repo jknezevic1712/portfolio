@@ -9,12 +9,12 @@ export default function AboutMe() {
       <Paragraph type="CONTENT">
         Born in 1998 in Pakrac, Croatia. Graduated at Technical school in
         Daruvar becoming a{' '}
-        <span className="bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent">
+        <span className="bg-linear-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent">
           computer technician
         </span>
         . After that, I enrolled at the Faculty of Organization and Informatics
         in Varaždin, where I obtained degree of{' '}
-        <span className="bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent">
+        <span className="bg-linear-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent">
           Bachelors in Informatics
         </span>
         .
@@ -24,11 +24,11 @@ export default function AboutMe() {
         Personality wise, I am interested in programming, music and travelling.
         I also believe in team work and communication as they are, in my
         opinion, crucial to achieving{' '}
-        <span className="bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent">
+        <span className="bg-linear-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent">
           success
         </span>{' '}
         and{' '}
-        <span className="bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent">
+        <span className="bg-linear-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent">
           progress
         </span>
         . In my free time, I try to explore new patterns/ways of building all
@@ -40,15 +40,15 @@ export default function AboutMe() {
       <Paragraph type="CONTENT">
         Additionally, I strive to become part of a team that pushes each other
         every day to{' '}
-        <span className="bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent">
+        <span className="bg-linear-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent">
           become better
         </span>{' '}
         by{' '}
-        <span className="bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent">
+        <span className="bg-linear-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent">
           learning from our mistakes
         </span>{' '}
         and{' '}
-        <span className="bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent">
+        <span className="bg-linear-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent">
           working together to solve them
         </span>{' '}
         so that everyone can hopefully learn something along the way!

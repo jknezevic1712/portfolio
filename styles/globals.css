@@ -1,47 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-html,
-body {
-	padding: 0;
-	margin: 0;
-	font-family:
-		-apple-system,
-		BlinkMacSystemFont,
-		Segoe UI,
-		Roboto,
-		Oxygen,
-		Ubuntu,
-		Cantarell,
-		Fira Sans,
-		Droid Sans,
-		Helvetica Neue,
-		sans-serif;
+@theme {
+  --font-burtons: "burtons";
+  --breakpoint-3xl: 2560px;
 }
 
-a {
-	color: inherit;
-	text-decoration: none;
-}
-
-* {
-	box-sizing: border-box;
-}
+@custom-variant dark (&:where(.dark, .dark *));
 
 @font-face {
-	font-family: 'burtons';
-	src: url('../public/Burtons.otf');
-}
-
-.img-inherit_dimensions > span {
-	position: static !important;
-	width: inherit !important;
-	height: inherit !important;
-}
-
-.img-inherit_dimensions > span > img {
-	position: static !important;
-	width: inherit !important;
-	height: inherit !important;
+  font-family: "burtons";
+  src: url("../public/Burtons.otf");
 }

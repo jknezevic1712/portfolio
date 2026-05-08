@@ -10,7 +10,7 @@ export default function Hero() {
   return (
     <section className="my-5 w-full max-w-7xl">
       <div className="text-center md:p-10">
-        <h2 className="bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text py-2 text-4xl font-medium text-transparent md:text-5xl 2xl:text-6xl 3xl:text-6xl">
+        <h2 className="bg-linear-to-r from-cyan-500 to-teal-500 bg-clip-text py-2 text-4xl font-medium text-transparent md:text-5xl 2xl:text-6xl 3xl:text-6xl">
           Jakov Knezevic
         </h2>
         <h3 className="py-2 text-2xl dark:text-gray-100 md:text-2xl 2xl:text-3xl">

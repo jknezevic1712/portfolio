@@ -15,11 +15,10 @@ export default function PersonalProjects() {
 			<h3 className="mb-5 text-center text-3xl dark:text-gray-100 md:text-left 3xl:text-4xl">
 				Personal projects
 			</h3>
-			{/* <div className="gap-10 lg:flex lg:flex-wrap lg:justify-center lg:gap-5 xl:gap-10"> */}
 			<div className="gap-10 lg:grid lg:grid-cols-1 lg:justify-center lg:gap-5 xl:gap-10">
 				<WideCard url="https://plahutica.vercel.app/">
 					<Header2>Plahutica</Header2>
-					<div className="img-inherit_dimensions border border-gray-950 rounded-sm lg:group-hover:scale-105 lg:transition-all lg:duration-500">
+					<div className="border border-gray-950 rounded-sm lg:group-hover:scale-105 lg:transition-all lg:duration-500">
 						<Img
 							type="PROJECT"
 							src={plahutica}
@@ -33,7 +32,7 @@ export default function PersonalProjects() {
 
 				<WideCard url="https://recipe-o-mat.web.app/">
 					<Header2>Recipe-O-Mat</Header2>
-					<div className="img-inherit_dimensions border border-gray-950 rounded-sm lg:group-hover:scale-105 lg:transition-all lg:duration-500">
+					<div className="border border-gray-950 rounded-sm lg:group-hover:scale-105 lg:transition-all lg:duration-500">
 						<Img
 							type="PROJECT"
 							src={recipe_o_mat}
@@ -47,7 +46,7 @@ export default function PersonalProjects() {
 
 				<WideCard url="https://crwn-clothing-jk.vercel.app/">
 					<Header2>Crown Clothing</Header2>
-					<div className="img-inherit_dimensions border border-gray-950 rounded-sm lg:group-hover:scale-105 lg:transition-all lg:duration-500">
+					<div className="border border-gray-950 rounded-sm lg:group-hover:scale-105 lg:transition-all lg:duration-500">
 						<Img
 							type="PROJECT"
 							src={crwn_clothing}
@@ -60,7 +59,7 @@ export default function PersonalProjects() {
 				<WideCard url="https://tmb-jk.vercel.app/">
 					<Header2>Task Management Board</Header2>
 
-					<div className="img-inherit_dimensions border border-gray-950 rounded-sm lg:group-hover:scale-105 lg:transition-all lg:duration-500">
+					<div className="border border-gray-950 rounded-sm lg:group-hover:scale-105 lg:transition-all lg:duration-500">
 						<Img
 							type="PROJECT"
 							src={tmb}
@@ -76,7 +75,7 @@ export default function PersonalProjects() {
 				<WideCard url="https://better-timer.vercel.app/">
 					<Header2>Better Timer</Header2>
 
-					<div className="img-inherit_dimensions border border-gray-950 rounded-sm lg:group-hover:scale-105 lg:transition-all lg:duration-500">
+					<div className="border border-gray-950 rounded-sm lg:group-hover:scale-105 lg:transition-all lg:duration-500">
 						<Img
 							type="PROJECT"
 							src={better_timer}

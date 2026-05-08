@@ -16,11 +16,11 @@ export default function WorkExperience() {
         <Paragraph type="CONTENT">
           Since the beginning of my journey as a frontend developer and software
           engineer, I&apos;ve done remote and on site work for{' '}
-          <span className="bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent lg:hover:bg-gradient-to-r lg:hover:from-cyan-600 lg:hover:to-teal-600 lg:hover:transition-all">
+          <span className="bg-linear-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent lg:hover:bg-linear-to-r lg:hover:from-cyan-600 lg:hover:to-teal-600 lg:hover:transition-all">
             <a href="https://www.libelle.com/">Ovis software</a>
           </span>{' '}
           and{' '}
-          <span className="bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent lg:hover:bg-gradient-to-r lg:hover:from-cyan-600 lg:hover:to-teal-600 lg:hover:transition-all">
+          <span className="bg-linear-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent lg:hover:bg-linear-to-r lg:hover:from-cyan-600 lg:hover:to-teal-600 lg:hover:transition-all">
             <a href="https://www.ovis-software.com/">Libelle IT Group</a>
           </span>{' '}
           while also working on personal development and side projects that
@@ -40,7 +40,7 @@ export default function WorkExperience() {
             goals which in turn has made me realize which tools I like to use
             the most and here are some of my favorites.
           </Paragraph>
-          <h4 className="bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text py-4 text-transparent 2xl:text-xl">
+          <h4 className="bg-linear-to-r from-cyan-500 to-teal-500 bg-clip-text py-4 text-transparent 2xl:text-xl">
             Most used tools
           </h4>
           <div className="flex items-center justify-center 2xl:text-lg">
