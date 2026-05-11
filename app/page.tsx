@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 import Hero from '../components/templates/Hero';
 import WorkExperience from '../components/templates/WorkExperience';
-import AboutMe from '../components/templates/AboutMe';
+import About from '../components/templates/About';
 import PersonalProjects from '../components/templates/PersonalProjects';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 
@@ -16,8 +16,8 @@ export default function Home() {
 			<main className="flex flex-col items-center bg-gray-50 px-10 pt-16 dark:bg-gray-800 md:px-20 lg:px-20">
 				<div className="flex flex-col items-center gap-12 max-w-3xl">
 					<Hero />
-					<WorkExperience />
-					<AboutMe />
+					<About />
+					{/* <WorkExperience /> */}
 					<PersonalProjects />
 				</div>
 
