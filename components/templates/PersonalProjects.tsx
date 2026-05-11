@@ -25,7 +25,7 @@ export default function PersonalProjects() {
 						/>
 					</div>
 					<Paragraph>
-						Travelling on a budget guide here to help you out with useful ideas
+						Traveling on a budget guide here to help you out with useful ideas
 						or advices for your journey.
 					</Paragraph>
 				</WideCard>
