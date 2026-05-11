@@ -30,32 +30,6 @@ export default function PersonalProjects() {
 					</Paragraph>
 				</WideCard>
 
-				<WideCard url="https://recipe-o-mat.web.app/">
-					<HeaderText>Recipe-O-Mat</HeaderText>
-					<div className="border border-gray-950 rounded-sm lg:group-hover:scale-105 lg:transition-all lg:duration-500">
-						<Img
-							type="PROJECT"
-							src={recipe_o_mat}
-						/>
-					</div>
-
-					<Paragraph>
-						Check out some amazing recipes or share yours with others!
-					</Paragraph>
-				</WideCard>
-
-				<WideCard url="https://crwn-clothing-jk.vercel.app/">
-					<HeaderText>Crown Clothing</HeaderText>
-					<div className="border border-gray-950 rounded-sm lg:group-hover:scale-105 lg:transition-all lg:duration-500">
-						<Img
-							type="PROJECT"
-							src={crwn_clothing}
-						/>
-					</div>
-
-					<Paragraph>Web shop with various products.</Paragraph>
-				</WideCard>
-
 				<WideCard url="https://tmb-jk.vercel.app/">
 					<HeaderText>Task Management Board</HeaderText>
 
