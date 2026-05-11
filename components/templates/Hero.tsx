@@ -19,6 +19,7 @@ export default function Hero() {
 						<Anchor
 							href={'https://www.google.com/maps/place/Zagreb'}
 							className="flex gap-1 items-center justify-center text-xs 2xl:text-sm 3xl:text-lg text-gray-800 dark:text-gray-300"
+							underline
 						>
 							<CiGlobe />
 							<span>Zagreb, Croatia, CET</span>
@@ -32,19 +33,19 @@ export default function Hero() {
 
 				<div className="flex justify-center gap-5 text-gray-600 dark:text-gray-300">
 					<Anchor
-						type={'BADGE'}
+						variant={'BADGE'}
 						href={'https://github.com/jknezevic1712/'}
 					>
 						<AiFillGithub />
 					</Anchor>
 					<Anchor
-						type={'BADGE'}
+						variant={'BADGE'}
 						href={'https://www.linkedin.com/in/jknezevic1712/'}
 					>
 						<AiFillLinkedin />
 					</Anchor>
 					<Anchor
-						type={'BADGE'}
+						variant={'BADGE'}
 						href={'mailto:knezevic.jakov@gmail.com'}
 					>
 						<AiFillMail />
