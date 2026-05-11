@@ -5,7 +5,7 @@ import tmb from '../../public/tmb-showcase.webp';
 import better_timer from '../../public/better_timer-showcase.webp';
 
 import WideCard from '../molecules/WideCard';
-import Header2 from '../atoms/Header2';
+import HeaderText from '../atoms/HeaderText';
 import Img from '../atoms/Img';
 import Paragraph from '../atoms/Paragraph';
 
@@ -17,7 +17,7 @@ export default function PersonalProjects() {
 			</h3>
 			<div className="gap-10 lg:grid lg:grid-cols-1 lg:justify-center lg:gap-5 xl:gap-10">
 				<WideCard url="https://plahutica.vercel.app/">
-					<Header2>Plahutica</Header2>
+					<HeaderText>Plahutica</HeaderText>
 					<div className="border border-gray-950 rounded-sm lg:group-hover:scale-105 lg:transition-all lg:duration-500">
 						<Img
 							type="PROJECT"
@@ -31,7 +31,7 @@ export default function PersonalProjects() {
 				</WideCard>
 
 				<WideCard url="https://recipe-o-mat.web.app/">
-					<Header2>Recipe-O-Mat</Header2>
+					<HeaderText>Recipe-O-Mat</HeaderText>
 					<div className="border border-gray-950 rounded-sm lg:group-hover:scale-105 lg:transition-all lg:duration-500">
 						<Img
 							type="PROJECT"
@@ -45,7 +45,7 @@ export default function PersonalProjects() {
 				</WideCard>
 
 				<WideCard url="https://crwn-clothing-jk.vercel.app/">
-					<Header2>Crown Clothing</Header2>
+					<HeaderText>Crown Clothing</HeaderText>
 					<div className="border border-gray-950 rounded-sm lg:group-hover:scale-105 lg:transition-all lg:duration-500">
 						<Img
 							type="PROJECT"
@@ -57,7 +57,7 @@ export default function PersonalProjects() {
 				</WideCard>
 
 				<WideCard url="https://tmb-jk.vercel.app/">
-					<Header2>Task Management Board</Header2>
+					<HeaderText>Task Management Board</HeaderText>
 
 					<div className="border border-gray-950 rounded-sm lg:group-hover:scale-105 lg:transition-all lg:duration-500">
 						<Img
@@ -73,7 +73,7 @@ export default function PersonalProjects() {
 				</WideCard>
 
 				<WideCard url="https://better-timer.vercel.app/">
-					<Header2>Better Timer</Header2>
+					<HeaderText>Better Timer</HeaderText>
 
 					<div className="border border-gray-950 rounded-sm lg:group-hover:scale-105 lg:transition-all lg:duration-500">
 						<Img
