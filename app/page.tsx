@@ -22,7 +22,7 @@ export default function Home() {
 				</div>
 
 				<BsFillMoonStarsFill
-					className="cursor-pointer text-2xl dark:text-gray-100 fixed bottom-6 right-3 3xl:text-3xl"
+					className="cursor-pointer text-2xl dark:text-gray-100 fixed bottom-12 right-12 3xl:text-3xl"
 					onClick={() => setDarkMode((v) => !v)}
 				/>
 			</main>
