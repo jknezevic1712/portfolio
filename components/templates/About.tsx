@@ -1,3 +1,4 @@
+import { RESUME_DATA } from '@/lib/data/RESUME_DATA';
 import Paragraph from '../atoms/Paragraph';
 
 export default function About() {
@@ -7,11 +8,7 @@ export default function About() {
 				About
 			</h3>
 
-			<Paragraph type="CONTENT">
-				Software Engineer with 5+ years shipping web applications for enterprise
-				and startups. Building scalable frontends, modernizing legacy codebases,
-				and owning features from concept to deployment.
-			</Paragraph>
+			<Paragraph type="CONTENT">{RESUME_DATA.summary}</Paragraph>
 		</section>
 	);
 }

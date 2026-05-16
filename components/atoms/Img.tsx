@@ -1,11 +1,12 @@
 import Image, { StaticImageData } from 'next/image';
 
 interface ImgProps {
-	src: StaticImageData;
+	src: string | StaticImageData;
 	type?: 'DEFAULT' | 'HERO' | 'PROJECT';
+	fill?: boolean;
 }
 
-export default function Img({ src, type = 'DEFAULT' }: ImgProps) {
+export default function Img({ src, type = 'DEFAULT', fill = false }: ImgProps) {
 	if (type === 'DEFAULT') {
 		return (
 			<Image
@@ -22,6 +23,7 @@ export default function Img({ src, type = 'DEFAULT' }: ImgProps) {
 			src={src}
 			alt=""
 			priority={type === 'HERO'}
+			fill={fill}
 		/>
 	);
 }

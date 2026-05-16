@@ -47,8 +47,9 @@ export default function Hero() {
 
 			<div className="relative mx-auto h-52 w-52 overflow-hidden rounded-3xl shadow-2xl filter lg:h-44 lg:w-44">
 				<Img
-					src={avatar}
+					src={RESUME_DATA.avatarUrl}
 					type="HERO"
+					fill
 				/>
 			</div>
 		</section>
