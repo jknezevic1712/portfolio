@@ -1,19 +1,24 @@
-import { ReactNode } from "react";
+import { DetailedHTMLProps, HTMLAttributes, ReactNode } from 'react';
 
-interface WideCardProps {
-  children: ReactNode;
-  url: string;
+interface WideCardProps extends DetailedHTMLProps<
+	HTMLAttributes<HTMLDivElement>,
+	HTMLDivElement
+> {
+	children: ReactNode;
+	className?: string;
 }
 
-export default function WideCard({ children, url }: WideCardProps) {
-  return (
-    <a
-      href={url}
-      target="_blank"
-      rel="noreferrer"
-      className="my-10 gap-4 flex flex-1 basis-1/3 xl:basis-1/4 flex-col items-center justify-start rounded-xl p-10 text-center shadow-lg dark:bg-gray-200 lg:hover:shadow-xl lg:transition-all lg:duration-500 group lg:hover:gap-8"
-    >
-      {children}
-    </a>
-  );
+export default function WideCard({
+	children,
+	className = '',
+	...props
+}: WideCardProps) {
+	return (
+		<div
+			className={`my-10 gap-4 flex flex-1 basis-1/3 xl:basis-1/4 flex-col items-center justify-start rounded-xl p-10 text-center shadow-lg dark:bg-gray-200 lg:hover:-translate-y-2 lg:transition-all lg:duration-500 group ${className}`}
+			{...props}
+		>
+			{children}
+		</div>
+	);
 }

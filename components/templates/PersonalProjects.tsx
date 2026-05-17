@@ -1,13 +1,7 @@
-import plahutica from '../../public/plahutica-showcase.webp';
-import crwn_clothing from '../../public/crwn_clothing-showcase.webp';
-import recipe_o_mat from '../../public/recipe_o_mat-showcase.webp';
-import tmb from '../../public/tmb-showcase.webp';
-import better_timer from '../../public/better_timer-showcase.webp';
-
 import WideCard from '../molecules/WideCard';
 import HeaderText from '../atoms/HeaderText';
-import Img from '../atoms/Img';
 import Paragraph from '../atoms/Paragraph';
+import { RESUME_DATA } from '@/lib/data/RESUME_DATA';
 
 export default function PersonalProjects() {
 	return (
@@ -16,50 +10,32 @@ export default function PersonalProjects() {
 				Personal projects
 			</h3>
 			<div className="gap-10 lg:grid lg:grid-cols-1 lg:justify-center lg:gap-5 xl:gap-10">
-				<WideCard url="https://plahutica.vercel.app/">
-					<HeaderText>Plahutica</HeaderText>
-					<div className="border border-gray-950 rounded-sm lg:group-hover:scale-105 lg:transition-all lg:duration-500">
-						<Img
-							type="PROJECT"
-							src={plahutica}
-						/>
-					</div>
-					<Paragraph>
-						Traveling on a budget guide here to help you out with useful ideas
-						or advices for your journey.
-					</Paragraph>
-				</WideCard>
+				{RESUME_DATA.projects.map((project) => {
+					return (
+						<WideCard key={project.title}>
+							<HeaderText
+								asLink
+								url={project.link}
+							>
+								{project.title}
+							</HeaderText>
+							<Paragraph>{project.description}</Paragraph>
 
-				<WideCard url="https://tmb-jk.vercel.app/">
-					<HeaderText>Task Management Board</HeaderText>
-
-					<div className="border border-gray-950 rounded-sm lg:group-hover:scale-105 lg:transition-all lg:duration-500">
-						<Img
-							type="PROJECT"
-							src={tmb}
-						/>
-					</div>
-
-					<Paragraph>
-						Application providing you with an overview of tasks you create and
-						manipulate with.
-					</Paragraph>
-				</WideCard>
-
-				<WideCard url="https://better-timer.vercel.app/">
-					<HeaderText>Better Timer</HeaderText>
-
-					<div className="border border-gray-950 rounded-sm lg:group-hover:scale-105 lg:transition-all lg:duration-500">
-						<Img
-							type="PROJECT"
-							src={better_timer}
-						/>
-					</div>
-
-					<Paragraph>
-						Easily track time spent on your tasks using Better Timer!
-					</Paragraph>
-				</WideCard>
+							<div className="w-full flex items-center gap-4 mt-3">
+								{project.techStack.map((tech: string) => {
+									return (
+										<div
+											key={tech}
+											className="text-transparent font-semibold bg-linear-to-r from-cyan-500 to-teal-500 bg-clip-text p-2 shadow-md rounded-lg"
+										>
+											{tech}
+										</div>
+									);
+								})}
+							</div>
+						</WideCard>
+					);
+				})}
 			</div>
 		</section>
 	);

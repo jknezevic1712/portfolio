@@ -7,7 +7,7 @@ export const ICON_MAP = {
 } as const;
 
 export const RESUME_DATA = {
-	name: 'Jakov Knezevic',
+	name: 'Jakov Knežević',
 	initials: 'JK',
 	location: 'Zagreb, Croatia, CET',
 	locationLink: 'https://www.google.com/maps/place/Zagreb',
@@ -124,32 +124,35 @@ export const RESUME_DATA = {
 	projects: [
 		{
 			title: 'Plahutica',
-			techStack: ['Vercel', 'React/Next.js', 'TypeScript', 'TailwindCSS'],
+			techStack: [
+				'Vercel',
+				'React/Next.js',
+				'TypeScript',
+				'TailwindCSS',
+				'Shadcn-ui',
+			],
 			description:
 				'Traveling on a budget guide here to help you out with useful ideas or advices for your journey',
-			link: {
-				label: 'Plahutica',
-				href: 'https://monito.dev/',
-			},
+			link: 'https://plahutica.vercel.app/',
 		},
 		{
-			title: '43frames',
-			techStack: ['TypeScript', 'Next.js', 'AI'],
-			description: 'AI-powered image and video generation studio',
-			link: {
-				label: '43frames.com',
-				href: 'https://43frames.com/',
-			},
-		},
-		{
-			title: 'Minimalist CV',
-			techStack: ['TypeScript', 'Next.js', 'Tailwind CSS'],
+			title: 'Task Management Board',
+			techStack: [
+				'React/Next.js',
+				'TypeScript',
+				'TailwindCSS',
+				'Shadcn-ui',
+				'Firebase',
+			],
 			description:
-				'Open source, print-friendly CV template. 9,600+ stars on GitHub',
-			link: {
-				label: 'Minimalist CV',
-				href: 'https://github.com/BartoszJarocki/cv',
-			},
+				'Application providing you with an overview of tasks you create and manipulate with.',
+			link: 'https://tmb-jk.vercel.app/',
+		},
+		{
+			title: 'Better Timer',
+			techStack: ['React/Next.js', 'TypeScript', 'PrimeReact', 'Firebase'],
+			description: 'Easily track time spent on your tasks using Better Timer!',
+			link: 'https://better-timer.vercel.app/',
 		},
 	],
 } as const;
