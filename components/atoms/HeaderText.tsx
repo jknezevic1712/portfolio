@@ -24,6 +24,7 @@ export default function HeaderText({
 				href={url}
 				target="_blank"
 				rel="noreferrer"
+				className="hover:underline"
 			>
 				<HeaderTextComponent />
 			</Link>

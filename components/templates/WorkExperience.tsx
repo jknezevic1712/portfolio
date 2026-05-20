@@ -1,86 +1,66 @@
-import design from '../../public/design.png';
-import code from '../../public/code.png';
-import consulting from '../../public/consulting.png';
-
-import Paragraph from '../atoms/Paragraph';
-import Img from '../atoms/Img';
-import Card from '../molecules/Card';
+import { RESUME_DATA } from '@/lib/data/RESUME_DATA';
+import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
 
 export default function WorkExperience() {
-  return (
-    <section className="mb-5 mt-10 w-full max-w-7xl">
-      <div className="mb-20">
-        <h3 className="mb-5 text-center text-3xl dark:text-gray-100 md:text-left 3xl:text-4xl">
-          Work experience
-        </h3>
-        <Paragraph type="CONTENT">
-          Since the beginning of my journey as a frontend developer and software
-          engineer, I&apos;ve done remote and on site work for{' '}
-          <span className="bg-linear-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent lg:hover:bg-linear-to-r lg:hover:from-cyan-600 lg:hover:to-teal-600 lg:hover:transition-all">
-            <a href="https://www.libelle.com/">Ovis software</a>
-          </span>{' '}
-          and{' '}
-          <span className="bg-linear-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent lg:hover:bg-linear-to-r lg:hover:from-cyan-600 lg:hover:to-teal-600 lg:hover:transition-all">
-            <a href="https://www.ovis-software.com/">Libelle IT Group</a>
-          </span>{' '}
-          while also working on personal development and side projects that
-          continuously keep advancing me to the next levels.
-        </Paragraph>
-      </div>
+	const WorkExperienceBadges = ({ badges }: { badges: readonly string[] }) => {
+		return badges.map((badge) => (
+			<div
+				key={badge}
+				className="text-transparent font-semibold bg-linear-to-r from-cyan-500 to-teal-500 bg-clip-text p-2 shadow-md rounded-lg text-xs"
+			>
+				<span>{badge}</span>
+			</div>
+		));
+	};
 
-      <div className="gap-10 lg:flex lg:flex-wrap lg:justify-center lg:gap-5 xl:flex-nowrap xl:gap-10">
-        <Card>
-          <Img src={code} />
-          <h3 className="pb-4 pt-8 text-lg font-medium 2xl:text-2xl">
-            Tools I love using
-          </h3>
-          <Paragraph type="CARD">
-            Building web applications, websites and software has encouraged me
-            to explore and use different tools to achieve the required needs and
-            goals which in turn has made me realize which tools I like to use
-            the most and here are some of my favorites.
-          </Paragraph>
-          <h4 className="bg-linear-to-r from-cyan-500 to-teal-500 bg-clip-text py-4 text-transparent 2xl:text-xl">
-            Most used tools
-          </h4>
-          <div className="flex items-center justify-center 2xl:text-lg">
-            <div className="mr-5 md:mr-10">
-              <Paragraph type="LABEL">React</Paragraph>
-              <Paragraph type="LABEL">Angular</Paragraph>
-              <Paragraph type="LABEL">Typescript</Paragraph>
-            </div>
-            <div>
-              <Paragraph type="LABEL">Next.js</Paragraph>
-              <Paragraph type="LABEL">Redux/NgRx</Paragraph>
-              <Paragraph type="LABEL">Tailwind CSS</Paragraph>
-            </div>
-          </div>
-        </Card>
+	return (
+		<section className="mb-5 mt-10 w-full max-w-7xl">
+			<div className="mb-20">
+				<h3 className="mb-5 text-center text-3xl dark:text-gray-100 md:text-left 3xl:text-4xl">
+					Work experience
+				</h3>
 
-        <Card>
-          <Img src={design} />
-          <h3 className="pb-4 pt-8 text-lg font-medium 2xl:text-2xl">
-            Planning and designing
-          </h3>
-          <Paragraph type="CARD">
-            Planning and designing software solutions is something I love and
-            enjoy because every time I come up with a new solution, I learn
-            something new along the way.
-          </Paragraph>
-        </Card>
+				{RESUME_DATA.work.map((workExp) => {
+					return (
+						<div
+							key={workExp.company}
+							className="flex flex-1 basis-1/3 xl:basis-1/4 flex-col items-center justify-start rounded-xl p-10 text-center shadow-lg dark:bg-gray-200 my-5 md:my-10 lg:hover:shadow-3xl lg:transition-all lg:hover:-translate-y-2 lg:duration-500"
+						>
+							<div className="flex items-center justify-start text-start gap-3 flex-col md:flex-row md:justify-between md:gap-12">
+								<h3 className="pb-4 pt-8 text-lg font-medium 2xl:text-2xl">
+									{workExp.company}
+								</h3>
 
-        <Card>
-          <Img src={consulting} />
-          <h3 className="pb-4 pt-8 text-lg font-medium 2xl:text-2xl">
-            Teamwork
-          </h3>
-          <Paragraph type="CARD">
-            I believe in teamwork and mutual support so that each of us could
-            become a better version of ourselves both as a person and as a
-            developer every day!
-          </Paragraph>
-        </Card>
-      </div>
-    </section>
-  );
+								<div className="hidden flex-wrap items-center gap-2 lg:flex">
+									<WorkExperienceBadges badges={workExp.badges} />
+								</div>
+							</div>
+
+							<p className="text-sm py-2 text-center md:text-start 2xl:text-lg">
+								{workExp.description}
+							</p>
+
+							<div className="w-full flex flex-col items-start justify-center gap-y-6 my-8">
+								{workExp.highlights.map((highlight: string) => (
+									<div
+										key={highlight}
+										className="grid grid-flow-col items-center pl-3 gap-5"
+									>
+										<HiOutlineArrowNarrowRight className="col-span-2" />
+										<span className="text-start text-xs xl:text-sm">
+											{highlight}
+										</span>
+									</div>
+								))}
+							</div>
+
+							<div className="flex flex-wrap items-center gap-2 lg:hidden">
+								<WorkExperienceBadges badges={workExp.badges} />
+							</div>
+						</div>
+					);
+				})}
+			</div>
+		</section>
+	);
 }

@@ -17,7 +17,7 @@ export default function Home() {
 				<div className="flex flex-col items-center gap-12 max-w-3xl">
 					<Hero />
 					<About />
-					{/* <WorkExperience /> */}
+					<WorkExperience />
 					<PersonalProjects />
 				</div>
 
