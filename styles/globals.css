@@ -2,6 +2,7 @@
 
 @theme {
   --font-burtons: "burtons";
+  --font-futura: "futura";
   --breakpoint-3xl: 2560px;
 }
 
@@ -10,4 +11,9 @@
 @font-face {
   font-family: "burtons";
   src: url("../public/Burtons.otf");
+}
+
+@font-face {
+  font-family: "futura";
+  src: url("../public/FuturaMediumC-Italic.otf");
 }

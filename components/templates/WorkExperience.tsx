@@ -24,37 +24,43 @@ export default function WorkExperience() {
 					return (
 						<div
 							key={workExp.company}
-							className="flex flex-1 basis-1/3 xl:basis-1/4 flex-col items-center justify-start rounded-xl p-10 text-center shadow-lg dark:bg-gray-200 my-5 md:my-10 lg:hover:shadow-3xl lg:transition-all lg:hover:-translate-y-2 lg:duration-500"
+							className="flex flex-1 basis-1/3 xl:basis-1/4 flex-col items-center justify-start rounded-xl py-10 px-4 text-center shadow-lg dark:bg-gray-200 my-5 md:my-10 lg:hover:shadow-3xl lg:transition-all lg:hover:-translate-y-2 lg:duration-500"
 						>
-							<div className="flex items-center justify-start text-start gap-3 flex-col md:flex-row md:justify-between md:gap-12">
-								<h3 className="pb-4 pt-8 text-lg font-medium 2xl:text-2xl">
+							<div className="w-full grid grid-cols-2">
+								<h3 className="font-futura text-start text-xl font-bold md:text-3xl 2xl:text-3xl">
 									{workExp.company}
 								</h3>
 
-								<div className="hidden flex-wrap items-center gap-2 lg:flex">
-									<WorkExperienceBadges badges={workExp.badges} />
+								<div className="flex items-center justify-end text-sm">
+									<span>
+										{workExp.start} - {workExp.end ?? 'Present'}
+									</span>
 								</div>
 							</div>
 
-							<p className="text-sm py-2 text-center md:text-start 2xl:text-lg">
+							<div className="w-full flex text-base justify-start items-center font-medium">
+								<span>{workExp.role}</span>
+							</div>
+
+							<p className="font-light text-sm py-2 text-start 2xl:text-lg">
 								{workExp.description}
 							</p>
 
-							<div className="w-full flex flex-col items-start justify-center gap-y-6 my-8">
+							<div className="w-full flex flex-col items-start justify-center gap-y-6 mt-2 mb-6">
 								{workExp.highlights.map((highlight: string) => (
 									<div
 										key={highlight}
 										className="grid grid-flow-col items-center pl-3 gap-5"
 									>
 										<HiOutlineArrowNarrowRight className="col-span-2" />
-										<span className="text-start text-xs xl:text-sm">
+										<span className="font-light text-start text-xs xl:text-sm">
 											{highlight}
 										</span>
 									</div>
 								))}
 							</div>
 
-							<div className="flex flex-wrap items-center gap-2 lg:hidden">
+							<div className="w-full flex flex-wrap items-center justify-start gap-2">
 								<WorkExperienceBadges badges={workExp.badges} />
 							</div>
 						</div>

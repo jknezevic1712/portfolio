@@ -13,7 +13,7 @@ export default function Home() {
 
 	return (
 		<div className={darkMode ? 'dark' : ''}>
-			<main className="flex flex-col items-center bg-gray-50 px-10 pt-16 dark:bg-gray-800 md:px-20 lg:px-20">
+			<main className="flex flex-col items-center bg-gray-50 px-3 pt-16 dark:bg-gray-800">
 				<div className="flex flex-col items-center gap-12 max-w-3xl">
 					<Hero />
 					<About />

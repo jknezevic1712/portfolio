@@ -57,7 +57,7 @@ export const RESUME_DATA = {
 				'Dynamic PPT/PDF',
 				'#NET',
 			],
-			title: 'Software Engineer',
+			role: 'Software Engineer',
 			start: '2024',
 			end: null,
 			description:
@@ -81,7 +81,7 @@ export const RESUME_DATA = {
 				'jQuery',
 				'Python',
 			],
-			title: 'Software Engineer',
+			role: 'Software Engineer',
 			start: '2022',
 			end: '2024',
 			description:
@@ -102,7 +102,7 @@ export const RESUME_DATA = {
 				'jQuery',
 				'Bootstrap',
 			],
-			title: 'Software Engineer',
+			role: 'Software Engineer',
 			start: '2021',
 			end: '2021',
 			description:
