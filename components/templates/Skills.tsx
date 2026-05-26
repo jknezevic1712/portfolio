@@ -9,7 +9,7 @@ export default function Skills() {
 					Skills
 				</h3>
 
-				<div className="w-full flex flex-wrap items-center justify-start gap-2">
+				<div className="w-full flex flex-wrap items-center justify-start gap-2 py-10 px-4 my-5 md:my-10 lg:transition-all lg:duration-500 lg:hover:-translate-y-2 lg:hover:backdrop-blur-md">
 					<TechStackBadges badges={RESUME_DATA.skills} />
 				</div>
 			</div>
