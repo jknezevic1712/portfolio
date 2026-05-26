@@ -1,8 +1,9 @@
 import Hero from '@/components/templates/Hero';
-import WorkExperience from '@/components/templates/WorkExperience';
 import About from '@/components/templates/About';
-import SideProjects from '@/components/templates/SideProjects';
+import WorkExperience from '@/components/templates/WorkExperience';
 import Education from '@/components/templates/Education';
+import Skills from '@/components/templates/Skills';
+import SideProjects from '@/components/templates/SideProjects';
 
 export default function Home() {
 	return (
@@ -12,6 +13,7 @@ export default function Home() {
 				<About />
 				<WorkExperience />
 				<Education />
+				<Skills />
 				<SideProjects />
 			</div>
 		</main>
