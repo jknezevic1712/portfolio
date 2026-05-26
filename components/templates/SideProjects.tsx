@@ -2,11 +2,11 @@ import HeaderText from '../atoms/HeaderText';
 import { RESUME_DATA } from '@/lib/data/RESUME_DATA';
 import { TechStackBadges } from '../molecules/TechStackBadges';
 
-export default function PersonalProjects() {
+export default function SideProjects() {
 	return (
 		<section className="mt-5 w-full max-w-7xl">
 			<h3 className="mb-5 text-center text-3xl md:text-left 3xl:text-4xl">
-				Personal projects
+				Side projects
 			</h3>
 			<div className="grid grid-cols-1 justify-center xl:gap-10">
 				{RESUME_DATA.projects.map((project) => {
