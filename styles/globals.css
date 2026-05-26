@@ -1,19 +1,59 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
-  --font-burtons: "burtons";
-  --font-futura: "futura";
-  --breakpoint-3xl: 2560px;
-}
-
-@custom-variant dark (&:where(.dark, .dark *));
-
-@font-face {
-  font-family: "burtons";
-  src: url("../public/Burtons.otf");
+	--font-futura: 'futura';
+	--breakpoint-3xl: 2560px;
+	--color-highlight: #e09a6a;
 }
 
 @font-face {
-  font-family: "futura";
-  src: url("../public/FuturaMediumC-Italic.otf");
+	font-family: 'futura';
+	src: url('../public/FuturaMediumC-Italic.otf');
+}
+
+html {
+	background: conic-gradient(
+		from 225deg,
+		rgba(234, 227, 217, 0.75) 0deg,
+		rgba(234, 227, 217, 0.75) 17.143deg,
+		rgba(236, 228, 218, 0.75) calc(17.143deg + 0.1deg),
+		rgba(236, 228, 218, 0.75) 34.286deg,
+		rgba(237, 228, 218, 0.75) calc(34.286deg + 0.1deg),
+		rgba(237, 228, 218, 0.75) 51.429deg,
+		rgba(237, 227, 217, 0.75) calc(51.429deg + 0.1deg),
+		rgba(237, 227, 217, 0.75) 68.571deg,
+		rgba(237, 226, 216, 0.75) calc(68.571deg + 0.1deg),
+		rgba(237, 226, 216, 0.75) 85.714deg,
+		rgba(236, 224, 214, 0.75) calc(85.714deg + 0.1deg),
+		rgba(236, 224, 214, 0.75) 102.857deg,
+		rgba(234, 222, 211, 0.75) calc(102.857deg + 0.1deg),
+		rgba(234, 222, 211, 0.75) 120deg,
+		rgba(232, 219, 208, 0.75) calc(120deg + 0.1deg),
+		rgba(232, 219, 208, 0.75) 137.143deg,
+		rgba(229, 216, 205, 0.75) calc(137.143deg + 0.1deg),
+		rgba(229, 216, 205, 0.75) 154.286deg,
+		rgba(226, 212, 201, 0.75) calc(154.286deg + 0.1deg),
+		rgba(226, 212, 201, 0.75) 171.429deg,
+		rgba(223, 207, 196, 0.75) calc(171.429deg + 0.1deg),
+		rgba(223, 207, 196, 0.75) 188.571deg,
+		rgba(219, 203, 192, 0.75) calc(188.571deg + 0.1deg),
+		rgba(219, 203, 192, 0.75) 205.714deg,
+		rgba(214, 198, 187, 0.75) calc(205.714deg + 0.1deg),
+		rgba(214, 198, 187, 0.75) 222.857deg,
+		rgba(210, 193, 182, 0.75) calc(222.857deg + 0.1deg),
+		rgba(210, 193, 182, 0.75) 240deg,
+		rgba(205, 188, 177, 0.75) calc(240deg + 0.1deg),
+		rgba(205, 188, 177, 0.75) 257.143deg,
+		rgba(200, 182, 172, 0.75) calc(257.143deg + 0.1deg),
+		rgba(200, 182, 172, 0.75) 274.286deg,
+		rgba(195, 177, 167, 0.75) calc(274.286deg + 0.1deg),
+		rgba(195, 177, 167, 0.75) 291.429deg,
+		rgba(190, 173, 162, 0.75) calc(291.429deg + 0.1deg),
+		rgba(190, 173, 162, 0.75) 308.571deg,
+		rgba(185, 168, 157, 0.75) calc(308.571deg + 0.1deg),
+		rgba(185, 168, 157, 0.75) 325.714deg,
+		rgba(181, 164, 153, 0.75) calc(325.714deg + 0.1deg),
+		rgba(181, 164, 153, 0.75) 342.857deg,
+		rgba(177, 160, 149, 0.75) calc(342.857deg + 0.1deg) 360deg
+	);
 }

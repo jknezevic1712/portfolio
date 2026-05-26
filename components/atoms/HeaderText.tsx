@@ -13,7 +13,7 @@ export default function HeaderText({
 	url = '',
 }: HeaderTextProps) {
 	const HeaderTextComponent = () => (
-		<h2 className="font-futura text-lg text-gray-950 md:text-3xl 2xl:text-3xl">
+		<h2 className="font-futura text-start text-xl font-bold md:text-3xl 2xl:text-3xl">
 			{children}
 		</h2>
 	);

@@ -3,7 +3,7 @@ import { HTMLAttributes, ReactNode } from 'react';
 
 const AnchorVariants = {
 	DEFAULT: '',
-	CV: 'ml-8 rounded-md bg-gradient-to-r from-cyan-500 to-teal-500 px-4 py-2 text-white lg:hover:bg-gradient-to-r lg:hover:from-cyan-600 lg:hover:to-teal-600 lg:hover:transition-all 3xl:text-lg',
+	CV: 'ml-8 rounded-md text-highlight px-4 py-2 text-white lg:hover:transition-all 3xl:text-lg',
 	BADGE: 'border rounded-2xl p-1 text-2xl',
 } as const;
 
