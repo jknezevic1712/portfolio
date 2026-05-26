@@ -1,11 +1,9 @@
 import { RESUME_DATA } from '@/lib/data/RESUME_DATA';
+import Section from '../molecules/Section';
 
 export default function Education() {
 	return (
-		<section className="mt-5 w-full max-w-7xl">
-			<h3 className="mb-5 text-center text-3xl md:text-left 3xl:text-4xl">
-				Education
-			</h3>
+		<Section title="Education">
 			<div className="grid grid-cols-1 justify-center xl:gap-10">
 				{RESUME_DATA.educations.map((education) => {
 					return (
@@ -25,13 +23,13 @@ export default function Education() {
 								</div>
 							</div>
 
-							<div className="w-full flex text-base justify-start items-center font-medium">
+							<div className="w-full flex text-base text-start justify-start items-center font-medium">
 								<span>{education.degree}</span>
 							</div>
 						</div>
 					);
 				})}
 			</div>
-		</section>
+		</Section>
 	);
 }
