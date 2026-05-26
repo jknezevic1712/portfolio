@@ -1,7 +1,8 @@
-import Hero from '../components/templates/Hero';
-import WorkExperience from '../components/templates/WorkExperience';
-import About from '../components/templates/About';
-import SideProjects from '../components/templates/SideProjects';
+import Hero from '@/components/templates/Hero';
+import WorkExperience from '@/components/templates/WorkExperience';
+import About from '@/components/templates/About';
+import SideProjects from '@/components/templates/SideProjects';
+import Education from '@/components/templates/Education';
 
 export default function Home() {
 	return (
@@ -10,6 +11,7 @@ export default function Home() {
 				<Hero />
 				<About />
 				<WorkExperience />
+				<Education />
 				<SideProjects />
 			</div>
 		</main>

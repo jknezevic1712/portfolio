@@ -36,7 +36,7 @@ export const RESUME_DATA = {
 			},
 		],
 	},
-	education: [
+	educations: [
 		{
 			school: 'Faculty of Organization and Informatics',
 			degree: "Bachelor's Degree in Business informatics",
