@@ -8,6 +8,7 @@ export const ICON_MAP = {
 
 export const RESUME_DATA = {
 	name: 'Jakov Knežević',
+	role: 'Software Engineer',
 	initials: 'JK',
 	location: 'Zagreb, Croatia, CET',
 	locationLink: 'https://www.google.com/maps/place/Zagreb',
@@ -16,6 +17,12 @@ export const RESUME_DATA = {
 	summary:
 		'Software Engineer with 5+ years shipping web applications for enterprise and startups. Building scalable frontends, modernizing legacy codebases, and owning features from concept to deployment.',
 	avatarUrl: 'https://avatars.githubusercontent.com/u/190621376?v=4',
+	metadata: {
+		baseUrl: 'https://portfolio-jknezevic.vercel.app',
+		title: 'Jakov Knežević | Software Engineer',
+		description:
+			'Software Engineer with 5+ years shipping web applications. React, Angular, TypeScript.',
+	},
 	contact: {
 		email: 'knezevic.jakov@gmail.com',
 		social: [
