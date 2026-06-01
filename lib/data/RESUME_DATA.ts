@@ -70,8 +70,10 @@ export const RESUME_DATA = {
 			description:
 				'Enterprise procurement and strategic sourcing platform that helps organizations plan, analyze, and execute supply chain strategies — covering spend analysis, supplier evaluation, risk management, and initiative tracking.',
 			highlights: [
-				'Planned and delivered refactors of multiple project pain points',
-				'Led development of crucial features',
+				'Built key frontend features for strategy and supplier modules (executive summaries, SWOT/risk views, supplier performance, PPT/PDF reporting)',
+				'Developed supplier evaluation flows end-to-end — evaluation rounds, imports, grading logic, supplier letters with bulk send/download',
+				'Modernized Angular UI stack (route guards, shared components, grids, PrimeNG and SCSS upgrades)',
+				'Led frontend migration of configuration tooling to a unified model, enabling configurable evaluation setups without custom code',
 			],
 		},
 		{
@@ -94,9 +96,9 @@ export const RESUME_DATA = {
 			description:
 				'Database automation and data orchestration solutions which provide features such as disaster recovery, high availability, and data manipulation automation among others.',
 			highlights: [
-				'Architected migration of multiple projects to Typescript',
-				'Oversaw and implemented module federation approach to projects',
-				'Led development of crucial features',
+				'Architected TypeScript migration of legacy JavaScript codebases, improving type safety and reducing runtime errors',
+				'Implemented module federation architecture across 3 products, enabling independent team deployments',
+				'Built and maintained UIs for SAP automation, disaster recovery, and database migration tools',
 			],
 		},
 		{
@@ -115,8 +117,9 @@ export const RESUME_DATA = {
 			description:
 				'Involved in development of multiple projects such as all-in-one solution for telecom operators and harbor ships records solution',
 			highlights: [
-				'Project specification and planning',
-				'Continuous delivery of crucial features',
+				'Delivered features for an all-in-one telecom operator management platform',
+				'Built a harbor ships records system for tracking vessel data and documentation',
+				'Participated in project specification, planning, and continuous delivery cycles',
 			],
 		},
 	],
