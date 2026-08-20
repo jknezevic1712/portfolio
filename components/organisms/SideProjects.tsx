@@ -14,7 +14,7 @@ export default function SideProjects() {
 							className={`flex flex-1 basis-1/3 xl:basis-1/4 flex-col items-start justify-start rounded-xl py-10 px-4 text-start lg:hover:-translate-y-2 lg:transition-all lg:duration-500 lg:hover:backdrop-blur-md gap-4 group my-5 md:my-10`}
 						>
 							<HeaderText
-								asLink
+								asLink={!!project.link}
 								url={project.link}
 							>
 								{project.title}

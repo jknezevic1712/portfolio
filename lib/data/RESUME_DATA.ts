@@ -12,8 +12,7 @@ export const RESUME_DATA = {
 	initials: 'JK',
 	location: 'Zagreb, Croatia, CET',
 	locationLink: 'https://www.google.com/maps/place/Zagreb',
-	about:
-		'Software Engineer crafting web experiences from concept to production.',
+	about: 'Software Engineer crafting web experiences from concept to production.',
 	summary:
 		'Software Engineer with 6+ years shipping web applications for enterprise and startups. Building scalable frontends, modernizing legacy codebases, and owning features from concept to deployment.',
 	avatarUrl: 'https://avatars.githubusercontent.com/u/190621376?v=4',
@@ -63,6 +62,7 @@ export const RESUME_DATA = {
 				'TypeScript',
 				'Dynamic PPT/PDF',
 				'#NET',
+				'Python',
 			],
 			role: 'Software Engineer',
 			start: '2024',
@@ -140,20 +140,42 @@ export const RESUME_DATA = {
 		'Git',
 		'Design Systems',
 		'WebSockets',
+		'Drizzle',
+		'Prisma',
 	],
 	projects: [
 		{
-			title: 'Plahutica',
+			title: 'Interview Ready (work in progress)',
 			techStack: [
-				'Vercel',
-				'React/Next.js',
+				'AI',
+				'Tanstack Start',
+				'React',
 				'TypeScript',
-				'TailwindCSS',
 				'Shadcn-ui',
+				'TailwindCSS',
+				'Vite',
+				'NestJS',
+				'Prisma',
 			],
 			description:
-				'Traveling on a budget guide here to help you out with useful ideas or advices for your journey',
-			link: 'https://plahutica.vercel.app/',
+				'Full-stack AI-powered technical interview preparation platform featuring interactive quizzes, AI-generated questions, progress tracking, and structured technical interview practice',
+			link: 'https://github.com/jknezevic1712/interview-ready',
+		},
+		{
+			title: 'Ledgr (work in progress)',
+			techStack: [
+				'Tanstack Start',
+				'React',
+				'TypeScript',
+				'Shadcn-ui',
+				'TailwindCSS',
+				'Better Auth',
+				'Drizzle',
+				'Vite',
+			],
+			description:
+				'Personal finance management application for tracking income and expenses, organizing transactions, managing budgets, and analyzing spending patterns through an interactive dashboard',
+			link: 'https://github.com/jknezevic1712/ledgr',
 		},
 		{
 			title: 'Task Management Board',
@@ -165,14 +187,21 @@ export const RESUME_DATA = {
 				'Firebase',
 			],
 			description:
-				'Application providing you with an overview of tasks you create and manipulate with.',
+				'Task management web application built with Next.js, React, and TypeScript, featuring Google authentication, Firestore data persistence, drag-and-drop workflows, filtering, and Zustand-based state management',
 			link: 'https://tmb-jk.vercel.app/',
 		},
 		{
-			title: 'Better Timer',
-			techStack: ['React/Next.js', 'TypeScript', 'PrimeReact', 'Firebase'],
-			description: 'Easily track time spent on your tasks using Better Timer!',
-			link: 'https://better-timer.vercel.app/',
+			title: 'Plahutica',
+			techStack: [
+				'Vercel',
+				'React/Next.js',
+				'TypeScript',
+				'TailwindCSS',
+				'Shadcn-ui',
+			],
+			description:
+				'Full-stack travel blog application featuring dynamic content, responsive design, client-side state management, form validation, and a server-side feedback API',
+			link: 'https://plahutica.vercel.app/',
 		},
 	],
 } as const;
