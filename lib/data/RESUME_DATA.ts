@@ -74,6 +74,7 @@ export const RESUME_DATA = {
 				'Developed supplier evaluation flows end-to-end — evaluation rounds, imports, grading logic, supplier letters with bulk send/download',
 				'Modernized Angular UI stack (route guards, shared components, grids, PrimeNG and SCSS upgrades)',
 				'Led frontend migration of configuration tooling to a unified model, enabling configurable evaluation setups without custom code',
+				'Prototyped a RAG pipeline using Python, FastAPI, vector embeddings, and vision/text LLMs to turn presentation decks into cited Yes/No answers against a 500+ item strategy questionnaire',
 			],
 		},
 		{
