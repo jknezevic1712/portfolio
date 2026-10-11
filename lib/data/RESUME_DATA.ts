@@ -8,19 +8,19 @@ export const ICON_MAP = {
 
 export const RESUME_DATA = {
 	name: 'Jakov Knežević',
-	role: 'Software Engineer',
+	role: 'Senior Software Engineer',
 	initials: 'JK',
 	location: 'Zagreb, Croatia, CET',
 	locationLink: 'https://www.google.com/maps/place/Zagreb',
-	about: 'Software Engineer crafting web experiences from concept to production.',
+	about: 'Senior Software Engineer crafting web experiences from concept to production.',
 	summary:
-		'Software Engineer with 6+ years shipping web applications for enterprise and startups. Building scalable frontends, modernizing legacy codebases, and owning features from concept to deployment.',
+		'Senior Software Engineer focused on building production web applications with React, Angular, and TypeScript. My experience spans enterprise SaaS and product teams, from delivering complex customer-facing workflows to contributing to frontend architecture across multiple products.',
 	avatarUrl: 'https://avatars.githubusercontent.com/u/190621376?v=4',
 	metadata: {
 		baseUrl: 'https://portfolio-jknezevic.vercel.app',
-		title: 'Jakov Knežević | Software Engineer',
+		title: 'Jakov Knežević | Senior Software Engineer',
 		description:
-			'Software Engineer with 6+ years shipping web applications. React, Angular, TypeScript.',
+			'Senior Software Engineer focused on building production web applications with React, Angular, and TypeScript.',
 	},
 	contact: {
 		email: 'knezevic.jakov@gmail.com',
