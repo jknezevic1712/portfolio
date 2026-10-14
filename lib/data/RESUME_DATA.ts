@@ -14,13 +14,13 @@ export const RESUME_DATA = {
 	locationLink: 'https://www.google.com/maps/place/Zagreb',
 	about: 'Senior Software Engineer crafting web experiences from concept to production.',
 	summary:
-		'Senior Software Engineer focused on building production web applications with React, Angular, and TypeScript. My experience spans enterprise SaaS and product teams, from delivering complex customer-facing workflows to contributing to frontend architecture across multiple products.',
+		'Senior Frontend Engineer focused on React and Angular, building production web applications for enterprise clients and startups. I specialize in developing maintainable frontend systems, delivering complex features end-to-end, and contributing to architecture decisions across enterprise SaaS products.',
 	avatarUrl: 'https://avatars.githubusercontent.com/u/190621376?v=4',
 	metadata: {
 		baseUrl: 'https://portfolio-jknezevic.vercel.app',
 		title: 'Jakov Knežević | Senior Software Engineer',
 		description:
-			'Senior Software Engineer focused on building production web applications with React, Angular, and TypeScript.',
+			'Senior Frontend Engineer focused on React and Angular, building production web applications for enterprise clients and startups.',
 	},
 	contact: {
 		email: 'knezevic.jakov@gmail.com',
@@ -68,13 +68,13 @@ export const RESUME_DATA = {
 			start: '2024',
 			end: null,
 			description:
-				'Enterprise procurement and strategic sourcing platform that helps organizations plan, analyze, and execute supply chain strategies — covering spend analysis, supplier evaluation, risk management, and initiative tracking.',
+				'Developing Guided Strategy Creation (GSC), a customer-facing enterprise SaaS platform for strategic sourcing and procurement',
 			highlights: [
-				'Built key frontend features for strategy and supplier modules (executive summaries, SWOT/risk views, supplier performance, PPT/PDF reporting)',
-				'Developed supplier evaluation flows end-to-end — evaluation rounds, imports, grading logic, supplier letters with bulk send/download',
-				'Modernized Angular UI stack (route guards, shared components, grids, PrimeNG and SCSS upgrades)',
-				'Led frontend migration of configuration tooling to a unified model, enabling configurable evaluation setups without custom code',
-				'Prototyped a RAG pipeline using Python, FastAPI, vector embeddings, and vision/text LLMs to turn presentation decks into cited Yes/No answers against a 500+ item strategy questionnaire',
+				'Build and maintain complex frontend workflows using Angular and TypeScript',
+				'Work with NgRx for state management and PrimeNG and AG Grid for rich, data-intensive user interfaces',
+				'Develop within an Nx-based codebase, working with application and shared-library structures',
+				'Contribute to maintainability, testing, and the evolution of frontend features in a production enterprise application',
+				'Collaborate with the wider engineering team to deliver customer-facing functionality',
 			],
 		},
 		{
@@ -95,11 +95,13 @@ export const RESUME_DATA = {
 			start: '2022',
 			end: '2024',
 			description:
-				'Database automation and data orchestration solutions which provide features such as disaster recovery, high availability, and data manipulation automation among others.',
+				'Database automation and data orchestration solutions which provide features such as disaster recovery, high availability, and data manipulation automation among others',
 			highlights: [
-				'Architected TypeScript migration of legacy JavaScript codebases, improving type safety and reducing runtime errors',
-				'Implemented module federation architecture across 3 products, enabling independent team deployments',
-				'Built and maintained UIs for SAP automation, disaster recovery, and database migration tools',
+				'Led TypeScript migration of legacy JavaScript codebases, improving type safety and reducing runtime errors',
+				'Designed and implemented Module Federation architecture across three products, enabling independent deployments and more decoupled release cycles',
+				'Worked across multiple product lines regarding system availability automation, data manipulation, and cross-database migration among others',
+				'Developed data visualization dashboards for monitoring large-scale database operations',
+				'Mentored junior developers on React patterns and code review standards',
 			],
 		},
 		{
@@ -116,7 +118,7 @@ export const RESUME_DATA = {
 			start: '2021',
 			end: '2021',
 			description:
-				'Involved in development of multiple projects such as all-in-one solution for telecom operators and harbor ships records solution',
+				'Planning and development of software solutions for telecommunications and maritime industries',
 			highlights: [
 				'Delivered features for an all-in-one telecom operator management platform',
 				'Built a harbor ships records system for tracking vessel data and documentation',
